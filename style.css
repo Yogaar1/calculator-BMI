@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+--underweight:orange;
+--normal:green;
+--overweight:lightcoral;
+--obese:red;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+} 
+
+body {
+    background-image: url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.9);    padding : 1rem;
+    border-radius: 15px;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.25);
+    display: grid;
+    gap: 1rem;
+}
+
+.calculator {
+    display: grid;
+    gap: 1rem;
+
+}
+
+.calculator div {
+    display: flex;
+    flex-direction: column; /* Menjadikan elemen dalam div sebagai kolom */
+    gap: 1rem;
+}
+
+.calculator label {
+    display: flex;
+    flex-direction: column; /* Menjadikan label sebagai kolom */
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.calculator input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    outline-color: #F4CD2F;
+    font-size: 16px;
+    text-align: center;
+    width: 100%; /* Menjadikan input mengisi seluruh lebar kontainer */
+}
+
+
+.button {
+    text-align: center;
+    display: flex; /* Menjadikan kontennya sebagai flex container */
+    justify-content: center; /* Memusatkan horizontal */
+    align-items: center; /* Memusatkan vertikal */
+    margin-top: 20px;
+}
+
+.button button.calculate {
+    background-color: #D83F31;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calculator button:hover {
+    filter: brightness(120%);
+}
+
+.output {
+    text-align: center;
+}
+
+.output #bmi {
+    font-size: 50px;
+}
+
+.output #desc{
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.underweight {
+    color: var(--underweight);
+}
+
+.normal {
+    color: var(--normal);
+}
+
+.overweight {
+    color: var(--overweight);
+}
+
+.obese {
+    color: var(--obese);
+}
